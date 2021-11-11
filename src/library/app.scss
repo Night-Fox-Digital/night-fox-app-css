@@ -1,0 +1,44 @@
+/**
+
+IMPORTANT NOTE: If you get a compile error when running yarn related to 'resolve-url-loader', update webpack's sass as follows:
+
+	.sass('resources/sass/app.scss', 'public/css')
+		.options({
+			processCssUrls: false,
+		});
+
+*/
+
+@import 'forms/buttons';
+@import 'forms/colors';
+@import 'forms/dates';
+@import 'forms/forms';
+@import 'forms/galleries';
+@import 'forms/redactor/customized';
+@import 'forms/search';
+@import 'forms/selectize/customized';
+
+@import 'pages/buttons';
+@import 'pages/charts';
+@import 'pages/dashboard';
+@import 'pages/general';
+@import 'pages/grids';
+@import 'pages/tables';
+@import 'pages/titles';
+
+@import 'loaders/loaders';
+
+@import 'navigation/drawers';
+@import 'navigation/hamburger';
+@import 'navigation/modals';
+@import 'navigation/nav';
+
+@import 'unauth/unauth';
+
+@import 'alerts/alerts';
+
+@import 'print/print';
+
+@import 'television/television';
+
+@import 'core';

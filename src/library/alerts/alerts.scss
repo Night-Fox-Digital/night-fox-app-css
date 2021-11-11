@@ -1,0 +1,37 @@
+.alert{z-index:1000; position:fixed; top:-50px; height:50px; line-height:50px; left:calc(#{$nav-width + $header-width}); width:calc(100% - #{$nav-width + $header-width} - 40px); padding:0px 20px; font-size:$desktop-font-size; font-weight:600; color:#FFF; transition:$fast-transition;}
+.alert.active{top:0px;}
+.alert span{float:right; margin-top:17.5px;}
+
+@media (max-width:$close-nav-width)
+{
+    .alert{left:$header-width; width:calc(100% - $header-width - 40px);}
+}
+
+@media (max-width:$mobile-header-width)
+{
+    .alert{left:0px; width:calc(100% - 40px);}
+    .alert.active{top:$header-width;}
+}
+
+@media (max-width:$iphone-width)
+{
+    .alerts{font-size:$mobile-font-size;}
+}
+
+.alerts{display:block; width:100%; border-radius:$border-radius; margin-bottom:15px; color:#FFF;}
+.alerts ul{list-style:none;}
+.alerts ul li{border-bottom:1px solid $core-bg; padding:15px;}
+.alerts ul li:last-of-type{border:0px;}
+.alerts ul li span{margin-right:8px;}
+
+.input-container.bad-input-notice{border:1px solid $bad-color; width:calc(100% - 2px);}
+.input-container.good-input-notice{border:1px solid $good-color; width:calc(100% - 2px);}
+.input-container.brand-input-notice{border:1px solid $brand-color; width:calc(100% - 2px);}
+
+.input-container.bad-input-notice .input-box input[type=text]:focus{border-color:$bad-color;}
+.input-container.good-input-notice .input-box input[type=text]:focus{border-color:$good-color;}
+.input-container.brand-input-notice .input-box input[type=text]:focus{border-color:$brand-color;}
+
+.input-container.bad-input-notice div{border-color:$bad-color; color:$bad-color;}
+.input-container.good-input-notice div{border-color:$good-color; color:$good-color;}
+.input-container.brand-input-notice div{border-color:$brand-color; color:$brand-color;}

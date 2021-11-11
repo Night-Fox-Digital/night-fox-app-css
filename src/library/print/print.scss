@@ -1,0 +1,48 @@
+@media print
+{
+    @page {margin:30px;}
+    body{margin:0px auto; background:transparent;}
+    div{break-inside:avoid;}
+
+    nav,
+    header,
+    .button,
+    button,
+    .data-title,
+    .search-results,
+    .search-container,
+    .no-results,
+    .loader,
+    .drawer,
+    .modal-wrapper,
+    .alert{display:none !important;}
+
+    .core{padding:0px !important; margin:0px auto !important; min-height:auto !important;}
+
+    .drawer{position:static !important; max-width:none !important;}
+    .drawer.active{display:block !important;}
+    .drawer-container{height:auto;}
+    .drawer-container.padded,
+    .drawer-links{padding:0px; height:auto;}
+
+    .table,
+    .input-container,
+    .data,
+    .alerts{border:1px solid #000 !important; width:calc(100% - 2px) !important;}
+
+    .cell,
+    .input-title,
+    .input-container div,
+    .data .title,
+    .data .number{border-color:#000 !important;}
+
+    *{color:#000 !important; box-shadow:none !important;}
+
+    .micro-list .data{border-bottom-width:0px !important;}
+    .micro-list .cell{border-color:#000 !important;}
+    .micro-list .row:first-of-type .cell{border-color:transparent !important;}
+
+    input::placeholder,textarea::placeholder{color:transparent !important;}
+
+    a{border-color:#000 !important;}
+}

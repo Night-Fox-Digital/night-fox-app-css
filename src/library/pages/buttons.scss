@@ -1,0 +1,30 @@
+.buttons{white-space:nowrap;}
+
+.button{position:relative; display:inline-block; text-align:center; min-width:50px; height:50px; line-height:50px; border-radius:$border-radius; border:1px solid rgba($primary-color,0.5); color:$primary-color; background:$inverse-color; font-weight:600; font-size:18px; margin-left:5px;}
+.button:first-of-type{margin-left:0px;}
+.button.active{background:$primary-color; color:$inverse-color; border-color:$primary-color;}
+.button span{transition:$normal-transition;}
+.button.good-bg{color:#FFF;}
+.button.bad-bg{color:#FFF;}
+.button.brand-bg{color:#FFF;}
+.table .button,
+.account-switch .links .button{min-width:35px; height:35px; line-height:35px; font-size:16px;}
+.table.singular .button{min-width:50px; height:50px; line-height:50px; font-size:18px;}
+
+.button .hover-title{position:absolute; top:-30px; left:calc(-50% - 0px); width:100px; height:22.5px; line-height:23.5px; display:inline-block; white-space:nowrap; background:$primary-color; border-radius:$border-radius; color:$inverse-color; font-size:10px; font-weight:600; opacity:0; pointer-events:none; transition:$fast-transition; letter-spacing:0px !important; text-transform:none !important;}
+.button .hover-title::after{content:''; position:absolute; left:calc(50% - 5px); top:100%; width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-top:5px solid $primary-color;}
+.button:hover .hover-title{opacity:1;}
+.table .button .hover-title,
+.account-switch .links .button .hover-title{left:calc(-50% - 15px);}
+.table.singular .button .hover-title{left:-50%;}
+
+@media (max-width:$ipad-landscape-width)
+{
+    .button,
+    .table.singular .button,
+    .account-switch .links .button{min-width:30px; height:30px; line-height:30px; font-size:16px;}
+
+    .button .hover-title,
+    .account-switch .links .button .hover-title,
+    .table.singular .button .hover-title{left:calc(-50% - 20px); top:-28.5px;}
+}

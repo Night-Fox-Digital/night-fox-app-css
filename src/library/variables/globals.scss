@@ -1,0 +1,33 @@
+@import 'responsive';
+
+$main-font:"Montserrat", sans-serif;
+$accent-font:"Roboto Mono", monospace;
+
+$nav-width:300px;
+$header-width:80px;
+
+$fast-transition:0.25s ease-in-out;
+$normal-transition:0.5s ease-in-out;
+$slow-transition:1.5s ease-in-out;
+
+$border-radius:7.5px;
+
+$box-shadow:0px 0px 5px rgba(20,20,20,0.075);
+
+$brand-color-hover:#5041d0;
+.brand-bg{background:$brand-color !important; border-color:$brand-color !important;}
+a:hover.brand-bg,
+button:hover.brand-bg{background:$brand-color-hover !important; border-color:$brand-color-hover !important;}
+.brand-text{color:$brand-color !important;}
+
+$good-color-hover:#2da884;
+.good-bg{background:$good-color !important; border-color:$good-color !important;}
+a:hover.good-bg,
+button:hover.good-bg{background:$good-color-hover !important; border-color:$good-color-hover !important;}
+.good-text{color:$good-color !important;}
+
+$bad-color-hover:#b23434;
+.bad-bg{background:$bad-color !important; border-color:$bad-color !important;}
+a:hover.bad-bg,
+button:hover.bad-bg{background:$bad-color-hover !important; border-color:$bad-color-hover !important;}
+.bad-text{color:$bad-color !important;}

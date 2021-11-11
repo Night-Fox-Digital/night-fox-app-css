@@ -1,0 +1,11 @@
+{
+  "name": "night-fox-styles",
+  "version": "1.0.0",
+  "description": "Sass Styles for Night Fox projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Brown",
+  "license": "ISC"
+}

@@ -1,0 +1,53 @@
+.photo-gallery-content{display:table; text-align:left;}
+.photo-gallery-container .photo-container{display:block; width:calc(100% - 30px); padding:15px; border-radius:$border-radius; background:$inverse-color;}
+.photo-gallery-container .photo-container .photo{cursor:grab;}
+.photo-gallery-container .photo-container .photo img{width:100%;}
+.photo-gallery-container .photo-container .caption{position:relative; margin-top:-4px; color:$primary-color; font-family:$accent-font;}
+.photo-gallery-container .photo-container .caption span{display:block; padding:15px 0px; line-height:1.5em; font-size:13px; text-align:left;}
+.photo-gallery-container .photo-container .caption span a{color:$primary-color; border-bottom:1px solid $primary-color;}
+.photo-gallery-container .photo-container .caption span a:hover{border-color:transparent;}
+.photo-gallery-container .photo-container .caption textarea{width:100%; background:transparent; line-height:1.5em; font-size:13px; font-family:$accent-font; color:$primary-color; padding:15px 0px; outline:none !important;}
+.photo-gallery-container .photo-container .edit{display:block; text-align:left;}
+.photo-gallery-container .photo-container .edit a{text-decoration:none; display:inline-block; background:$inverse-color; border:1px solid rgba($primary-color,0.1); padding:10px; border-radius:$border-radius; line-height:1.0em;}
+.photo-gallery-container .photo-container .edit a:first-of-type{margin-right:5px;}
+.photo-gallery-container .photo-container .edit a span{font-size:20px; color:rgba($primary-color,0.6); transition:$fast-transition;}
+.photo-gallery-container .photo-container .edit a:hover{border-color:$primary-color;}
+.photo-gallery-container .photo-container .edit a:hover span{color:$primary-color;}
+.photo-gallery-container .photo-container.file-gallery-form .caption input[type=text]{width:100%; border-bottom:1px solid rgba($primary-color,0.1); background:$inverse-color; padding:10px 0px; font-size:13px; font-family:$accent-font; color:$primary-color; outline:none !important;}
+.photo-gallery-container .photo-container.file-gallery-form .caption textarea{margin-bottom:-4px;}
+.photo-gallery-container .photo-container.file-gallery-form .caption span:first-of-type{border-bottom:1px solid #DDD;}
+
+.input-dragger{cursor:grab;}
+.photo-gallery-container .input-dragger{margin-left:5px !important; border-bottom:1px solid rgba($primary-color,0.5) !important;}
+.photo-gallery-container .input-photo img{max-width:none !important;}
+
+@media only screen and (max-width:1400px)
+{
+    .photo-gallery-container{grid-template-columns:50% 50%;}
+}
+
+@media only screen and (max-width:900px)
+{
+    .photo-gallery-container{grid-template-columns:auto;}
+}
+
+.gallery-upload-container{position:static; margin-bottom:30px;}
+.gallery-upload-box{position:relative; width:calc(100% - 60px); transition:$normal-transition; background:$inverse-color; text-align:center; padding:40px 30px; border-radius:$border-radius;}
+.gallery-upload-box .gallery-upload-icon{display:block; font-size:120px; line-height:1.2em; color:$primary-color;}
+.gallery-upload-box .gallery-upload-icon img{width:100%; max-width:120px; margin-bottom:-5px;}
+.gallery-upload-box .gallery-upload-instructions{display:block; font-family:$main-font; font-size:22px; color:rgba($primary-color,0.8); margin-bottom:10px; letter-spacing:-0.25px;}
+.gallery-upload-box .gallery-upload-disclaimer{display:block; font-family:$main-font; font-size:13px; color:rgba($primary-color,0.5); margin-top:5px;}
+.gallery-upload-box input[type=file]{position:absolute; left:0px; top:0px; opacity:0; width:100%; height:100%; cursor:pointer; display:block;}
+.gallery-upload-box.dragging{background:$good-color !important; transition:$normal-transition;}
+.gallery-upload-box:hover{background:rgba($primary-color,0.05); transition:$fast-transition;}
+
+.gallery-progress-indicator{display:table; width:100%; background:$inverse-color; border-radius:$border-radius; margin-top:15px;}
+.gallery-progress-indicator .gallery-progress-thumbnail{display:table-cell; vertical-align:middle; text-align:left; width:150px; padding:10px;}
+.gallery-progress-indicator .gallery-progress-thumbnail img{width:100%; margin-bottom:-4px; border-radius:$border-radius;}
+.gallery-progress-indicator .gallery-progress-bar{display:table-cell; vertical-align:middle; text-align:left; padding-right:15px;}
+.gallery-progress-indicator .gallery-progress-bar .gallery-progress-filename{display:block; font-size:12px; margin-top:5px; color:$primary-color; font-weight:700;}
+.gallery-progress-indicator .gallery-upload-title{display:table-cell; vertical-align:middle; text-align:right; width:30px; padding:20px; transition:$normal-transition;}
+.gallery-progress-indicator .gallery-upload-title span{font-size:30px; color:$primary-color;}
+
+.form-progress-container{display:block; width:100%;}
+.form-progress-container .form-progress-bar{display:inline-block; height:5px; border-radius:2.5px; background:$good-color;}

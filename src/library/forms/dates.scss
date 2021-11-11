@@ -1,0 +1,48 @@
+.mx-input{position:relative; border:0px !important; height:auto !important; width:100% !important; background:transparent !important; border-radius:0px !important; box-shadow:none !important;}
+
+.mx-datepicker{width:100% !important;}
+
+.mx-icon-calendar,
+.mx-icon-clear{color:$primary-color !important; right:15px !important;}
+
+.mx-calendar{width:300px !important; height:350px !important;}
+
+.mx-datepicker-main{color:$primary-color !important; border-radius:$border-radius !important; background:$inverse-color !important; border:0px !important; font-family:$main-font !important;}
+
+.mx-table-date td,
+.mx-table-date th{font-size:$desktop-font-size !important; padding:5px !important;}
+
+.mx-table-date thead{background:rgba($core-bg,0.65) !important;}
+
+.mx-table th{color:rgba($primary-color,0.75) !important; font-size:12px !important;}
+
+.mx-calendar-header button{color:$primary-color !important; width:auto !important; padding:0px !important;}
+
+.mx-calendar+.mx-calendar{border-color:rgba($primary-color,0.1) !important;}
+
+.mx-table-date .today{background:transparent !important; border:1px solid $primary-color !important; color:$primary-color !important;}
+
+.mx-table-date .cell{border-radius:$border-radius !important;}
+
+.mx-table-date .cell:hover{background:rgba($primary-color,0.25) !important; color:$inverse-color !important;}
+
+.mx-datepicker-popup{box-shadow:none !important; border:1px solid rgba($primary-color,0.1) !important;}
+
+.mx-calendar-content .cell.active,
+.mx-calendar-content .cell.in-range{background:$primary-color !important; color:$inverse-color !important;}
+
+.mx-calendar-content .cell:hover{background:rgba($primary-color,0.25) !important; color:$primary-color !important;}
+
+.mx-table-date .in-range,
+.mx-table-date .hover-in-range{border:0px !important;}
+
+.mx-table-date .active,
+.mx-table-date .in-range,
+.mx-table-date .hover-in-range{background:$good-color !important; color:$inverse-color !important;}
+
+.mx-table-date td,
+.mx-table-date th,
+.mx-table-date tr,
+.mx-table-date .active,
+.mx-table-date .in-range,
+.mx-table-date .hover-in-range{border:1px solid $inverse-color !important;}

@@ -1,0 +1,16 @@
+.loader.full-page{position:fixed; display:table; top:0px; left:calc(#{$nav-width + $header-width}); width:calc(100% - #{$nav-width + $header-width}); height:100vh; background:$core-bg;}
+.loader.full-page .loader-container{display:table-cell; vertical-align:middle; text-align:center;}
+.loader.full-page .loader-container img{width:100px;}
+
+@media (max-width:$close-nav-width)
+{
+    .loader.full-page{left:$header-width; width:calc(100% - $header-width);}
+}
+
+@media (max-width:$mobile-header-width)
+{
+    .loader.full-page{top:$header-width; left:0px; width:100%;}
+}
+
+.loader.inline{position:static; padding:50px 25px; background:$inverse-color; border-radius:$border-radius; text-align:center; margin-bottom:25px;}
+.loader.inline img{width:75px;}

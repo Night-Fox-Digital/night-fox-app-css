@@ -1,0 +1,36 @@
+.selectize-input{display:block !important; box-shadow:none !important; border-radius:0px !important;}
+.selectize-dropdown{z-index:99999999999999999 !important; margin-top:-3px;}
+.selectize-input.focus{border:none !important; box-shadow:none !important;}
+.selectize-input,.selectize-dropdown{height:auto !important; color:$primary-color !important; font-family:$main-font !important; border:none !important; cursor:default !important; min-height:auto !important; padding:14px 0px !important;}
+.selectize-dropdown{padding:0px !important; background:transparent !important;}
+.input-container .input-box input::placeholder{color:rgba($primary-color,0.375) !important; width:100% !important;}
+.selectize-dropdown-content{padding:0px !important; background-color:$inverse-color; border:1px solid rgba($primary-color,0.1); border-radius:0px 0px $border-radius $border-radius;}
+.selectize-dropdown-content .option.active{color:$inverse-color; background-color:$primary-color !important;}
+.selectize-dropdown-content .option{font-size:calc($desktop-font-size - 3px); font-weight:600; cursor:default !important;}
+.selectize-dropdown-content .option,.selectize-dropdown .create,.selectize-dropdown .create.active{padding:10px 15px !important; color:$primary-color; text-align:left !important; font-size:calc($desktop-font-size - 3px) !important;}
+.input-container:hover .selectize-input.full,.input-container:hover .selectize-input,.input-container:hover .selectize-control.single .selectize-input.input-active{background:$inverse-color !important;}
+.selectize-input.full,.selectize-input, .selectize-control.single .selectize-input.input-active,.selectize-dropdown .active{padding-left:14px !important; background:$inverse-color !important;}
+.selectize-dropdown .selectize-dropdown-content .active{padding-left:15px !important;}
+.selectize-input.single:after{border-style:solid !important; border-width:5px 5px 0px 5px !important; border-color:rgba($primary-color,0.1) transparent transparent transparent !important;}
+.selectize-control.single .selectize-input.dropdown-active:after{border-style:solid !important; border-width:0px 5px 5px 5px !important; border-color:transparent transparent rgba($primary-color,0.1) transparent !important;}
+.selectize-control.multi .selectize-input .item.active{background:rgba($deep-color,0.1) !important; color:$primary-color !important;}
+.selectize-input.items.not-full, .selectize-input.items.full{background:transparent !important;}
+.input-container:hover .selectize-input.full, .input-container:hover .selectize-input, .input-container:hover .selectize-control.single .selectize-input.input-active{background:transparent !important;}
+.selectize-input.full, .selectize-input, .selectize-control.single .selectize-input.input-active, .selectize-dropdown .active{background:transparent !important;}
+.selectize-control.single .selectize-input{font-size:calc($desktop-font-size - 3px); padding-left:14px !important; font-weight:600;}
+.input-container .selectize-dropdown-content{margin-left:0px; margin-top:-2px; margin-left:-1px; width:100%;}
+.message .right .header .selectize-dropdown-content{font-size:calc($desktop-font-size - 3px); font-weight:600;}
+.selectize-input:not(.has-items) > input{width:80% !important; font-size:calc($desktop-font-size - 3px) !important;}
+.selectize-input .item{display:inline-block; background:rgba($deep-color,0.1) !important; color:$primary-color !important; border-radius:3px !important; padding:1px 5px 2.5px 5px; font-size:calc($desktop-font-size - 3px); font-weight:600; font-family:$main-font;}
+.selectize-control.multi .selectize-input > div{font-size:calc($desktop-font-size - 3px); font-weight:600; background:rgba($deep-color,0.1) !important; color:$primary-color !important; margin:0px 3px 0px 0px; padding:3px 5px;}
+.selectize-dropdown, .selectize-input, .selectize-input input{color:$primary-color !important; font-size:calc($desktop-font-size - 3px) !important;}
+.selectize-control.single .selectize-input:after{border-color:$primary-color transparent transparent;}
+.selectize-control.single .selectize-input.dropdown-active:after{border-color:transparent transparent $primary-color !important;}
+.selectize-input:not(.has-items)>input{font-family:$main-font; font-weight:600;}
+.selectize-control.single,.selectize-control.multi{border-bottom:0px !important;}
+.has-complex-form .selectize-input:not(.has-items)>input{height:23px;}
+.has-complex-form .input-container .selectize-dropdown-content{margin-top:0px;}
+.selectize-dropdown [data-selectable] .highlight{background:$inverse-color !important; color:$primary-color !important;}
+
+.selectize-control.multi .selectize-input > div,
+.selectize-control.multi .selectize-input .item{margin:1px;}

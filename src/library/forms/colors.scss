@@ -1,0 +1,13 @@
+/* VUE-COLOR COLOR PICKER */
+.vc-chrome{box-shadow:none; width:100% !important; box-shadow:none !important;}
+.vc-chrome input{padding:5px 0px; width:100%; font-family:$accent-font;}
+.input-container .vc-chrome input:first-of-type{color:$primary-color !important; background:$inverse-color !important; font-size:$desktop-font-size; padding:15px; width:calc(100% - 32px); border:1px solid rgba($primary-color,0.1); box-shadow:none;}
+.vc-chrome-body{background-color:$inverse-color !important;}
+.vc-chrome-toggle-icon-highlight{background:$inverse-color;}
+.vc-chrome-toggle-icon path{fill:rgba($primary-color,0.1) !important;}
+.vc-chrome-alpha-wrap{display:none;}
+.vc-chrome-hue-wrap{margin-top:11px;}
+.vc-chrome-toggle-btn{display:none;}
+.vc-chrome-fields .vc-input__label{display:none !important;}
+
+.vc-chrome div{border-bottom:0px !important;}

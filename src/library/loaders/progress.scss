@@ -1,0 +1,2 @@
+.form-progress-container{position:relative; width:100%; height:5px; background:rgba($primary-color,0.1); border-radius:2.5px;}
+.form-progress-container .form-progress-bar{display:inline-block; position:absolute; left:0px; top:0px; border-radius:2.5px; background:$good-color; height:5px; margin-bottom:1px; transition:all 350ms;}

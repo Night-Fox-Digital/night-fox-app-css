@@ -1,0 +1,24 @@
+.modal-wrapper{z-index:998; position:fixed; display:table; top:0px; left:calc(#{$nav-width + $header-width}); width:calc(100% - #{$nav-width + $header-width}); height:100vh; background:rgba($core-bg,0.75);}
+.modal-container{display:table-cell; vertical-align:middle; text-align:center;}
+
+.modal{display:block; width:calc(100% - 50px); max-width:500px; background:$inverse-color; border-radius:$border-radius; padding:25px;}
+
+.modal .input-container{background:$core-bg;}
+.modal .input-title{border-bottom-color:$inverse-color;}
+
+.modal-text{display:block; font-size:$desktop-font-size; color:$primary-color; line-height:1.5em; text-align:left; margin-bottom:25px;}
+
+@media (max-width:$close-nav-width)
+{
+    .modal-wrapper{left:$header-width; width:calc(100% - $header-width);}
+}
+
+@media (max-width:$mobile-header-width)
+{
+    .modal-wrapper{top:$header-width; left:0px; width:calc(100% - 50px); margin:25px; height:calc(100vh - $header-width - 50px);}
+}
+
+@media (max-width:$iphone-width)
+{
+    .modal-text{font-size:$mobile-font-size;}
+}

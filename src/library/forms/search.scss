@@ -1,0 +1,33 @@
+.search-container{display:table; width:100%; background:$inverse-color; border-radius:$border-radius; margin-bottom:25px;}
+.search-icon{position:relative; display:table-cell; vertical-align:middle; text-align:center; width:50px; font-size:18px; color:$primary-color; border-right:1px solid $core-bg;}
+a.search-icon:hover,
+a.search-icon:focus{color:$deep-color;}
+a.search-icon .hover-title{position:absolute; top:-30px; left:calc(-50% + 12.5px); width:75px; height:22.5px; line-height:23.5px; display:inline-block; white-space:nowrap; background:$primary-color; border-radius:$border-radius; color:$inverse-color; font-weight:600; font-size:10px; opacity:0; pointer-events:none; transition:$fast-transition;}
+a.search-icon .hover-title::after{content:''; position:absolute; left:calc(50% - 5px); top:100%; width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-top:5px solid $primary-color;}
+a.search-icon:hover .hover-title,
+a.search-icon:focus .hover-title{opacity:1;}
+.search-box{display:table-cell; vertical-align:middle; text-align:left;}
+.search-box input[type=text]{display:block; width:calc(100% - 30px); padding:15px; font-size:16px; color:$primary-color; font-family:$accent-font; background:transparent;}
+
+.search-results{display:table; width:100%; background:$inverse-color; border-radius:$border-radius; margin-bottom:25px;}
+.search-results .title-cell{display:table-cell; vertical-align:middle; text-align:left; padding:15px;}
+.search-results .title-cell .title{display:block; font-size:20px; font-weight:600; color:$primary-color;}
+.search-results .title-cell .subtitle{display:inline-block; font-size:14px; margin-top:10px; color:$primary-color;}
+.search-results .title-cell .subtitle a{color:$primary-color;}
+.search-results .title-cell .subtitle a:hover{color:$deep-color;}
+.search-results .title-cell .subtitle b{display:block; font-size:13px;}
+.search-results .title-cell .subtitle ul{margin-left:0px; list-style:none;}
+.search-results .title-cell .subtitle ul li{font-size:13px; padding:12.5px 0px 0px 0px;}
+.search-results .title-cell .subtitle ul li a{margin-right:8px;}
+.search-results .title-cell span{margin-right:5px;}
+.search-results .clear-button{display:table-cell; vertical-align:middle; text-align:center; width:100px; padding:25px 0px; border-right:1px solid $core-bg; color:$primary-color; font-size:13px;}
+.search-results .clear-button:hover,
+.search-results .clear-button:focus{color:$deep-color;}
+.search-results .clear-button span{display:block; font-size:30px;}
+
+@media (max-width:$iphone-width)
+{
+    .search-results .title-cell{display:block;}
+    .search-results .title-cell .title{font-size:16px;}
+    .search-results .clear-button{display:block; border-right:0px; border-bottom:1px solid $core-bg; width:calc(100% - 30px); padding:15px;}
+}

@@ -1,0 +1,7 @@
+.status{display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:4px;}
+
+.tag{display:inline-block; padding:1px 5px 2.5px 5px; margin-left:5px; border-radius:3px; font-weight:600; font-size:calc($desktop-font-size - 3px); background:rgba($deep-color,0.1); color:$primary-color;}
+.tag.good-bg,
+.tag.bad-bg,
+.tag.brand-bg{color:#FFF;}
+.cell .tag:first-of-type{margin-left:0px;}

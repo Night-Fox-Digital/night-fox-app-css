@@ -1,0 +1,148 @@
+form{position:relative; width:100%;}
+
+input,button,textarea,select{outline:none;}
+input:disabled,button:disabled,textarea:disabled,select:disabled{cursor:not-allowed;}
+input::placeholder{color:rgba($primary-color,0.375);}
+button{cursor:pointer;}
+
+.conjoin-input-containers{display:block; margin-bottom:15px; width:100%;}
+.conjoin-input-containers .input-container{margin-bottom:0px; border-radius:0px;}
+.conjoin-input-containers .input-container:first-of-type{border-radius:$border-radius $border-radius 0px 0px;}
+.conjoin-input-containers .input-container:last-of-type{border-radius:0px 0px $border-radius $border-radius; border-bottom:0px !important;}
+
+.input-container{position:relative; display:block; width:100%; background:$inverse-color; border-radius:$border-radius; margin-bottom:15px;}
+.input-container div{border-bottom:1px solid rgba($primary-color,0.1);}
+.input-container div:last-of-type,
+.conjoin-input-containers .input-container:last-of-type .input-box,
+.input-container .input-redactor div{border-bottom:0px;}
+.conjoin-input-containers .input-container div{border-bottom:1px solid rgba($primary-color,0.1);}
+
+.input-dragger,
+.photo-dragger{cursor:grab;}
+
+.inline-buttons{z-index:2; position:absolute; top:0px; right:0px; border:0px !important;}
+.inline-buttons a,
+.inline-buttons .input-dragger{display:inline-block; background:$core-bg; border-radius:50%; width:42.5px; height:42.5px; line-height:42.5px; text-align:center; font-size:14px; color:$primary-color; margin:5px 5px 0px 0px;}
+.inline-buttons.for-input-title a,
+.inline-buttons.for-input-title .input-dragger{width:35px; height:35px; line-height:35px;}
+.inline-buttons a:hover{color:$deep-color;}
+
+@media (max-width:$iphone-width)
+{
+    .inline-buttons a,
+    .inline-buttons .input-dragger{width:42px; height:42px; line-height:42px;}
+    .inline-buttons.for-input-title a,
+    .inline-buttons.for-input-title .input-dragger{width:32px; height:32px; line-height:32px;}
+}
+
+.input-title{display:block; padding:15px; font-weight:600; font-size:11px; border-bottom:1px solid rgba($primary-color,0.1); color:rgba($primary-color,0.8); text-transform:uppercase; letter-spacing:2px; text-align:left;}
+.input-title a{position:absolute; display:inline-block; right:7.5px; top:7.5px; width:25px; height:25px; border-radius:$border-radius; line-height:25px; text-align:center; font-size:12px; border:1px solid $primary-color; color:$primary-color;}
+.input-title a span{margin-right:-2px;}
+.input-title a:hover{border-color:$deep-color; color:$deep-color;}
+.input-title span{margin-right:5px;}
+
+.input-box{position:relative; width:100%;}
+.input-box input[type=text],
+.input-box input[type=email],
+.input-box input[type=password],
+.input-box textarea,
+.input-redactor textarea{display:block; width:calc(100% - 30px); line-height:1.75em; background:transparent; padding:15px; font-size:calc($desktop-font-size - 1px); color:$primary-color; font-family:$accent-font; letter-spacing:-0.25px;}
+.input-box textarea,
+.input-redactor textarea{min-height:125px;}
+
+/*
+
+The class "has-complex-form" can be applied to any "grid"
+element in odd cases where you need to stack many inputs on top of
+one another. The best example of this complex and rare form type is
+the Gravity Fox module creator page.
+
+*/
+.grid.has-complex-form .conjoin-input-containers .input-container{border-bottom:0px;}
+.grid.has-complex-form .conjoin-input-containers .input-container div{border-bottom:1px solid rgba($primary-color,0.1);}
+.grid.has-complex-form .conjoin-input-containers .input-container:last-of-type div{border-bottom:0px;}
+
+.input-static-text{display:block; padding:15px; font-size:$desktop-font-size; color:$primary-color; line-height:1.5em; text-align:left;}
+.input-static-text p{margin-bottom:30px; line-height:1.75em;}
+.input-static-text p:last-of-type{margin-bottom:0px;}
+.input-static-text ul{margin:30px 0px 0px 30px; line-height:1.75em;}
+.input-static-text a{color:$primary-color; border-bottom:1px solid $primary-color;}
+.input-static-text a:hover{border-color:transparent;}
+.input-static-text select{border-radius:3px; margin:0px 2.5px; background:rgba($deep-color,0.1); color:$primary-color;}
+.input-static-text .giant-icon{font-size:40px;}
+
+.input-counter{display:block; padding:15px; font-size:$desktop-font-size; color:$primary-color;}
+
+.input-photo{display:block; padding:15px;}
+.input-photo a{z-index:2; display:inline-block; position:relative; overflow:hidden; width:100%; max-width:350px;}
+.input-photo img{display:inline-block; width:100%; max-width:350px; margin-bottom:-5px; border-radius:$border-radius;}
+.input-photo a .hover-title{z-index:1; position:absolute; top:10px; right:10px; width:50px; height:50px; line-height:52.5px; display:inline-block; white-space:nowrap; text-align:center; border-radius:$border-radius; color:rgba(255,255,255,0.65); background:rgba(0,0,0,0.375); font-weight:600; font-size:30px; opacity:0; pointer-events:none; transition:$fast-transition;}
+.input-photo a:hover .hover-title,
+.input-photo a:focus .hover-title{opacity:1;}
+
+.input-link{display:block; padding:15px; color:$primary-color;}
+.input-link a{color:$primary-color;}
+.input-link a:not(.button) span{margin-right:5px;}
+.input-link a:hover{color:$deep-color;}
+.input-box + .input-link{font-size:$mobile-font-size;}
+
+.draft-status-bar-buffer{position:static; height:65px;}
+.draft-status-bar{z-index:99; position:fixed; display:table; height:$header-width; background:$core-bg; color:$primary-color; border-top:1px solid rgba($primary-color,0.1); bottom:0px; right:0px; width:calc(100% - $header-width - $nav-width);}
+.draft-status-bar .draft-status{display:table-cell; vertical-align:middle; text-align:left; padding:15px;}
+.draft-status-bar .draft-button{display:table-cell; vertical-align:middle; text-align:right; padding:15px;}
+
+@media (max-width:$close-nav-width)
+{
+    .draft-status-bar{width:calc(100% - $header-width);}
+}
+
+@media (max-width:$mobile-header-width)
+{
+    .draft-status-bar{width:100%;}
+}
+
+/* SINGLE FILE UPLOAD */
+input[type=file]{display:none;}
+.input-file-upload{display:block; font-size:$desktop-font-size; background:transparent; color:$primary-color; padding:15px; cursor:pointer; transition:$fast-transition;}
+.input-file-upload span{margin-right:5px;}
+.input-file-upload:hover{color:$deep-color;}
+
+/* CHECKBOX STYLING */
+.input-checkbox{display:table; width:100%;}
+.input-checkbox-text{display:table-cell; vertical-align:middle; text-align:left; padding:15px 15px 15px 10px; color:$primary-color; font-size:$desktop-font-size;}
+.input-checkbox-text a{color:$primary-color; border-bottom:1px solid $primary-color;}
+.input-checkbox-text a:hover{border-color:transparent;}
+.checkmark-container .checkbox{display:block; position:relative; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; height:35px; margin-top:10px;}
+.checkmark-container .checkbox input{position:absolute; opacity:0;}
+.checkmark-container{display:table-cell; vertical-align:middle; text-align:right; width:40px;}
+.checkmark-container .checkmark{display:inline-block; height:25px; width:25px; background-color:$core-bg;}
+.checkmark-container .checkbox input:checked ~ .checkmark{background-color:$good-color;}
+.checkmark-container .checkmark:after{content:""; position:absolute; display:none;}
+.checkmark-container .checkbox .checkmark:after{display:inline-block; left:23.5px; top:5px; width:5px; height:10px; border:solid #444; border-width:0 3px 3px 0; -webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
+.checkmark-container .checkbox input:checked ~ .checkmark:after{display:block; border-color:#FFF;}
+body.light .checkmark-container .checkbox .checkmark:after{border-color:#CCC;}
+body.light .checkmark-container .checkbox input:checked ~ .checkmark:after{border-color:#FFF;}
+
+/* RADIO BUTTONS */
+.input-radio{display:block; position:relative; padding:15px; color:$primary-color; font-size:$desktop-font-size; text-align:left; margin:15px 12.5px; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}
+.input-container .input-radio:last-of-type{padding-bottom:25px;}
+.input-radio .radio-text{position:absolute; top:3px; left:35px;}
+.input-radio input[type=radio]{position:absolute; opacity:0; cursor:default;}
+.radio-checkmark{position:absolute; top:0; left:0; height:25px; width:25px; background-color:$core-bg; border-radius:50%;}
+.input-radio input[type=radio]:checked ~ .radio-checkmark{background-color:$good-color;}
+.radio-checkmark:after{content:""; position:absolute; display:none;}
+.input-radio input[type=radio]:checked ~ .radio-checkmark:after{display:block;}
+.input-radio .radio-checkmark:after{top:7.5px; left:8px; width:9px; height:9px; border-radius:50%; background:#FFF;}
+
+@media (max-width:$iphone-width)
+{
+    input,
+    textarea,
+    .input-radio,
+    .input-checkbox-text,
+    .input-file-upload{font-size:$mobile-font-size !important;}
+
+    .input-title{font-size:9px; letter-spacing:1px;}
+
+    .input-file-upload span{width:25px;}
+}

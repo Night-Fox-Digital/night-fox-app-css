@@ -1,0 +1,18 @@
+.data{display:block; width:100%; background:$inverse-color; border-radius:$border-radius;}
+.data .title{display:block; text-align:center; font-size:10px; color:rgba($primary-color,0.8); text-transform:uppercase; letter-spacing:1.25px; font-weight:600; padding:15px; border-bottom:1px solid rgba($primary-color,0.1);}
+.data .title span{margin-right:5px;}
+.data .number{display:block; padding:30px 15px; font-size:$desktop-font-size; color:$primary-color; text-align:center;}
+.data .number.big{font-size:calc($desktop-font-size * 2);}
+a.data:hover,
+a.data.active{background:rgba($primary-color,0.05);}
+
+@media (max-width:$iphone-width)
+{
+    .data .number{font-size:$mobile-font-size;}
+    .data .number.big{font-size:calc($mobile-font-size * 2);}
+}
+
+.micro-list{display:block; width:100%;}
+.micro-list .data{border-radius:$border-radius $border-radius 0px 0px;}
+.micro-list .table{border-radius:0px 0px $border-radius $border-radius;}
+.micro-list .table .row:first-of-type .cell{border-width:1px;}
