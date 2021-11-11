@@ -1,0 +1,15 @@
+@import "node_modules/night-fox-styles/src/library/forms/redactor/redactor";
+@import "node_modules/night-fox-styles/src/library/forms/selectize/selectize";
+
+@import "_vars";
+
+body.dark{
+  @import 'node_modules/night-fox-styles/src/themes/dark';
+  &{background:$core-bg; font-family:$main-font; overflow-x:hidden;}
+  @import 'node_modules/night-fox-styles/src';
+}
+body.light{
+  @import 'node_modules/night-fox-styles/src/themes/light';
+  &{background:$core-bg; font-family:$main-font; overflow-x:hidden;}
+  @import 'node_modules/night-fox-styles/src';
+}
