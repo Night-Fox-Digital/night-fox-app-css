@@ -71,6 +71,8 @@
     .cell-wrapper{max-width:100px;}
     .row .cell:first-of-type .cell-wrapper{max-width:200px;}
 
+    .table .cell:nth-child(2){display:none;}
+
     .table.list .row:first-of-type .cell{font-size:10px !important; letter-spacing:0.5px;}
 }
 
