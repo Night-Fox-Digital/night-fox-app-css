@@ -24,6 +24,7 @@
 .table .cell .link:focus{border-color:transparent;}
 .table .cell.big-words{font-size:24px;}
 .table .row:first-of-type .cell{border-width:0px;}
+.table .cell:last-of-type{display:table-cell !important;}
 
 .cell-wrapper{display:inline-block; white-space:nowrap; text-overflow:ellipsis; max-width:250px; overflow:hidden;}
 .row .cell:first-of-type .cell-wrapper{max-width:500px;}
@@ -69,8 +70,6 @@
 {
     .cell-wrapper{max-width:100px;}
     .row .cell:first-of-type .cell-wrapper{max-width:200px;}
-
-    .table .cell:nth-child(2){display:none;}
 
     .table.list .row:first-of-type .cell{font-size:10px !important; letter-spacing:0.5px;}
 }

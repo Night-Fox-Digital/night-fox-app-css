@@ -4,13 +4,13 @@
 .drawer-container{position:static; height:calc(100vh - 100px); background:rgba($inverse-color,0.175); overflow-y:auto;}
 .drawer-container.padded{padding:50px;}
 
-.drawer-links{position:static; padding:40px; height:calc(100vh - 80px); background:$inverse-color;}
-.drawer-links .link{position:relative; display:block; color:$primary-color; background:$core-bg; border-radius:$border-radius; border:1px solid transparent; font-size:18px; margin:5px auto; padding:12.5px; text-align:left; transition:$fast-transition;}
+.drawer-links{position:static; padding:40px; height:calc(100vh - 80px); background:$core-bg;}
+.drawer-links .link{position:relative; display:block; color:$primary-color; background:$inverse-color; border-radius:$border-radius; border:1px solid transparent; font-size:18px; margin:5px auto; padding:12.5px; text-align:left; transition:$fast-transition;}
 .drawer-links .link span{display:inline-block; width:30px; text-align:left; font-size:18px; transition:$fast-transition;}
 .drawer-links .link span.pointer{float:right; color:transparent; text-align:right; margin-top:3px;}
 .drawer-links .link span.count{float:right; color:$inverse-color; background:$primary-color; min-width:15px; height:25px; line-height:25px; padding:0px 5px; font-size:15px; text-align:center; border-radius:12.5px; margin-right:0px;}
 .drawer-links .link.active,
-.drawer-links .link:hover{background:rgba($core-bg,0.5);}
+.drawer-links .link:hover{background:rgba($inverse-color,0.5);}
 
 @media (max-width:$close-nav-width)
 {
@@ -26,6 +26,8 @@
 
 @media (max-width:$iphone-width)
 {
-    .drawer-container{height:calc(100vh - 60px);}
-    .drawer-container.padded{padding:30px;}
+    .drawer-container,
+    .drawer-links{height:calc(100vh - 50px);}
+    .drawer-container.padded,
+    .drawer-links{padding:25px;}
 }
