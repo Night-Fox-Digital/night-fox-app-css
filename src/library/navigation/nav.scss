@@ -132,5 +132,5 @@ nav .links .link .deploy-title{display:inline-block; text-overflow:ellipsis; ove
 
 @media (max-width:$mobile-header-width)
 {
-    .core{margin:$header-width 0px 0px 0px; min-height:calc(100vh - 60px - $header-width); padding:30px;}
+    .core{margin:$header-width 0px 0px 0px; min-height:calc(100vh - 50px - $header-width); padding:25px;}
 }
