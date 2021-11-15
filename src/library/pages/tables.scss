@@ -89,6 +89,8 @@
 @media (max-width:$iphone-width)
 {
     .cell-wrapper{max-width:100px;}
+    .table .cell,
+    .table.list tbody .row:first-of-type .cell:not(.buttons){font-size:calc($mobile-font-size - 2px) !important;}
     .row .cell:first-of-type .cell-wrapper{max-width:200px;}
 
     .table .cell:nth-child(2){display:none;}

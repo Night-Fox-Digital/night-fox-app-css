@@ -32,6 +32,12 @@ header .links a:hover .hover-title{opacity:1;}
     header .links a .hover-title::after{left:calc(50% - 3.75px); top:-2.5px;}
 }
 
+@media (max-width:$iphone-width)
+{
+    header .links a{width:30px; height:30px; line-height:32.5px; font-size:15px;}
+    header .links a .hover-title{left:calc(-50% - 20px);}
+}
+
 nav{z-index:999; position:fixed; top:0px; left:$header-width; width:$nav-width; background:$inverse-color; transition:$fast-transition;}
 nav .links{position:static; text-align:center; padding:25px; height:calc(100vh - 50px); overflow-y:auto; -ms-overflow-style:none;}
 nav .links::-webkit-scrollbar{display:none; width:0px; background:transparent;}
