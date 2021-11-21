@@ -130,13 +130,16 @@ nav .links .link .deploy-title{display:inline-block; text-overflow:ellipsis; ove
 }
 
 .core{position:static; margin:0px 0px 0px #{$nav-width + $header-width}; min-height:calc(100vh - 100px); padding:50px; transition:$fast-transition;}
+.alert.active + .core{margin:50px 0px 0px #{$nav-width + $header-width}; min-height:calc(100vh - 150px);}
 
 @media (max-width:$close-nav-width)
 {
     .core{margin:0px 0px 0px $header-width;}
+    .alert.active + .core{margin:50px 0px 0px $header-width; min-height:calc(100vh - 150px);}
 }
 
 @media (max-width:$mobile-header-width)
 {
     .core{margin:$header-width 0px 0px 0px; min-height:calc(100vh - 50px - $header-width); padding:25px;}
+    .alert.active + .core{margin:calc(#{$header-width + 50px}) 0px 0px 0px; min-height:calc(100vh - #{$header-width + 50px}); padding:25px;}
 }

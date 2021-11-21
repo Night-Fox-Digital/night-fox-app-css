@@ -134,8 +134,8 @@ input[type=file]{display:none;}
 .input-container .input-radio:last-of-type{padding-bottom:25px;}
 .input-radio .radio-text{position:absolute; top:3px; left:35px;}
 .input-radio input[type=radio]{position:absolute; opacity:0; cursor:default;}
-.radio-checkmark{position:absolute; top:0; left:0; height:25px; width:25px; background-color:$core-bg; border-radius:50%;}
-.input-radio input[type=radio]:checked ~ .radio-checkmark{background-color:$good-color;}
+.radio-checkmark{position:absolute; top:0; left:0; height:25px; width:25px; background-color:$core-bg; border:1px solid rgba($primary-color,0.25); border-radius:50%;}
+.input-radio input[type=radio]:checked ~ .radio-checkmark{background-color:$good-color; border-color:$good-color;}
 .radio-checkmark:after{content:""; position:absolute; display:none;}
 .input-radio input[type=radio]:checked ~ .radio-checkmark:after{display:block;}
 .input-radio .radio-checkmark:after{top:7.5px; left:8px; width:9px; height:9px; border-radius:50%; background:#FFF;}
