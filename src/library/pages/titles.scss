@@ -74,32 +74,3 @@ margin-top batch above this comment.
     .data-title .title-cell .title{font-size:16px;}
     .data-title .title-cell .subtitle{font-size:12px;}
 }
-
-.search-results{display:table; width:100%; background:$inverse-color; border-radius:$border-radius; margin-bottom:25px;}
-.search-results .title-cell{display:table-cell; vertical-align:middle; text-align:left; padding:15px;}
-.search-results .title-cell .title{display:block; font-size:20px; font-weight:600; color:$primary-color;}
-.search-results .title-cell .subtitle{display:inline-block; font-size:14px; margin-top:10px; color:$primary-color;}
-.search-results .title-cell .subtitle a{color:$primary-color;}
-.search-results .title-cell .subtitle a:hover{color:$deep-color;}
-.search-results .title-cell .subtitle b{display:block; font-size:13px;}
-.search-results .title-cell .subtitle ul{margin-left:0px; list-style:none;}
-.search-results .title-cell .subtitle ul li{font-size:16px; padding:12.5px 0px 0px 0px;}
-.search-results .title-cell .subtitle ul li i{font-style:normal; font-weight:700;}
-.search-results .title-cell .subtitle ul li a{margin-right:8px;}
-.search-results .title-cell .subtitle ul li .fa,
-.search-results .title-cell .subtitle ul li .fal,
-.search-results .title-cell .subtitle ul li .fas,
-.search-results .title-cell .subtitle ul li .fad,
-.search-results .title-cell .subtitle ul li .fab{font-size:14px;}
-.search-results .title-cell span{margin-right:5px;}
-.search-results .clear-button{display:table-cell; vertical-align:middle; text-align:center; width:100px; padding:25px 0px; border-right:1px solid $core-bg; color:$primary-color; font-size:13px;}
-.search-results .clear-button:hover,
-.search-results .clear-button:focus{color:$deep-color;}
-.search-results .clear-button span{display:block; font-size:30px;}
-
-@media (max-width:$iphone-width)
-{
-    .search-results .title-cell{display:block;}
-    .search-results .title-cell .title{font-size:16px;}
-    .search-results .clear-button{display:block; border-right:0px; border-bottom:1px solid $core-bg; width:calc(100% - 30px); padding:15px;}
-}
