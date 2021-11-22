@@ -1,5 +1,5 @@
 .modal-wrapper{z-index:998; position:fixed; display:table; top:0px; left:calc(#{$nav-width + $header-width}); width:calc(100% - #{$nav-width + $header-width}); height:100vh; background:rgba($core-bg,0.75);}
-.modal-container{display:table-cell; vertical-align:middle; text-align:center;}
+.modal-container{display:table-cell; vertical-align:middle; text-align:left;}
 
 .modal{display:block; width:calc(100% - 50px); max-width:500px; background:$inverse-color; border-radius:$border-radius; padding:25px;}
 
