@@ -88,11 +88,10 @@ the Gravity Fox module creator page.
     .input-photo img{max-width:100%;}
 }
 
-.input-link{display:block; padding:15px; color:$primary-color;}
+.input-link{display:block; padding:15px; color:$primary-color; font-size:$mobile-font-size;}
 .input-link a{color:$primary-color;}
 .input-link a:not(.button) span{margin-right:5px;}
 .input-link a:hover{color:$deep-color;}
-.input-box + .input-link{font-size:$mobile-font-size;}
 
 .draft-status-bar-buffer{position:static; height:65px;}
 .draft-status-bar{z-index:99; position:fixed; display:table; height:$header-width; background:$core-bg; color:$primary-color; border-top:1px solid rgba($primary-color,0.1); bottom:0px; right:0px; width:calc(100% - $header-width - $nav-width);}
