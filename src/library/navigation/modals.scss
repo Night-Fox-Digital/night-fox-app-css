@@ -1,7 +1,7 @@
 .modal-wrapper{z-index:998; position:fixed; display:table; top:0px; left:calc(#{$nav-width + $header-width}); width:calc(100% - #{$nav-width + $header-width}); height:100vh; background:rgba($core-bg,0.85);}
-.modal-container{position:relative; display:table-cell; vertical-align:middle; text-align:left; padding:50px;}
+.modal-container{position:relative; display:table-cell; vertical-align:middle; text-align:left; padding:25px;}
 
-.modal{display:block; width:calc(100% - 50px); max-width:500px; background:$inverse-color; border-radius:$border-radius; padding:25px; overflow-y:scroll;}
+.modal{display:block; width:100%; max-width:600px; max-height:calc(100vh - 100px); background:$inverse-color; border-radius:$border-radius; padding:25px; overflow-y:scroll;}
 
 .modal .input-container{background:$core-bg;}
 .modal .input-title{border-bottom-color:$inverse-color;}
@@ -16,7 +16,7 @@
 @media (max-width:$mobile-header-width)
 {
     .modal-wrapper{top:$header-width; left:0px; width:100%; height:calc(100vh - $header-width);}
-    .modal{width:calc(100% - 100px);}
+    .modal{width:calc(100% - 50px);}
 }
 
 @media (max-width:$iphone-width)
