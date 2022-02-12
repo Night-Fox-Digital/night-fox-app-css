@@ -29,6 +29,6 @@
 }
 
 .big-buttons{padding:25px; width:calc(100% - 50px) !important;}
-.big-buttons a{display:block; text-align:center; background:$core-bg; font-size:15px; color:rgba($primary-color,0.65); border-radius:$border-radius; padding:30px 15px; border:1px solid transparent; width:calc(100% - 32px);}
+.big-buttons a{display:block; text-align:center; background:$core-bg; font-size:15px; color:rgba($primary-color,0.65); border-radius:$border-radius; padding:15px; border:1px solid transparent; width:calc(100% - 32px);}
 .big-buttons a:hover{border-color:$primary-color; color:$primary-color;}
 .big-buttons a.active{border-color:$good-color; color:$good-color;}
