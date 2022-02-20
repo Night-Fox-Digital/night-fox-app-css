@@ -23,6 +23,7 @@
 .table.singular .cell{padding:25px;}
 .table .cell.accent{font-family:$accent-font; font-size:0.75em;}
 .table .cell b{display:block;}
+.table .cell p{line-height:1.75em;}
 .table .cell .link{color:$primary-color; border-bottom:1px solid $primary-color;}
 .table .cell .link:hover,
 .table .cell .link:focus{border-color:transparent;}
