@@ -132,14 +132,22 @@ nav .links .link .deploy-title{display:inline-block; text-overflow:ellipsis; ove
 .core{position:static; margin:0px 0px 0px #{$nav-width + $header-width}; min-height:calc(100vh - 100px); padding:50px; transition:$fast-transition;}
 .alert.active + .core{margin:50px 0px 0px #{$nav-width + $header-width}; min-height:calc(100vh - 150px);}
 
+.core.external{padding:0px !important; width:calc(100% - #{$nav-width + $header-width}); height:100vh;}
+.core.external iframe{width:100%; height:100vh;}
+
+body.external-iframe-in-use .core{margin:0px;}
+
 @media (max-width:$close-nav-width)
 {
     .core{margin:0px 0px 0px $header-width;}
+    .core.external{width:calc(100% - #{$header-width});}
     .alert.active + .core{margin:50px 0px 0px $header-width; min-height:calc(100vh - 150px);}
 }
 
 @media (max-width:$mobile-header-width)
 {
-    .core{margin:$header-width 0px 0px 0px; min-height:calc(100vh - 50px - $header-width); padding:25px;}
+    .core,
+    .core.external{margin:$header-width 0px 0px 0px; min-height:calc(100vh - 50px - $header-width); padding:25px;}
+    .core.external{width:100%;}
     .alert.active + .core{margin:calc(#{$header-width + 50px}) 0px 0px 0px; min-height:calc(100vh - #{$header-width + 50px}); padding:25px;}
 }
