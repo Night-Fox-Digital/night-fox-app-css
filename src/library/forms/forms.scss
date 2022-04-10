@@ -81,6 +81,8 @@ the Gravity Fox module creator page.
 
 .input-counter{display:block; padding:15px; font-size:$desktop-font-size; color:$primary-color;}
 
+.input-box-icon{display:table-cell; vertical-align:middle; text-align:center; color:$primary-color; padding:15px;}
+
 .input-photo{display:block; padding:15px;}
 .input-photo a{z-index:2; display:inline-block; position:relative; overflow:hidden; width:100%; max-width:350px;}
 .input-photo img{display:inline-block; width:100%; max-width:350px; margin-bottom:-5px; border-radius:$border-radius;}
