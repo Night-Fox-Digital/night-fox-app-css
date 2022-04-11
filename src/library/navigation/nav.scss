@@ -157,4 +157,6 @@ body.external-iframe-in-use .core{margin:0px;}
     .core.external{margin:$header-width 0px 0px 0px; min-height:calc(100vh - 50px - $header-width); padding:25px;}
     .core.external{width:100%;}
     .alert.active + .core{margin:calc(#{$header-width + 50px}) 0px 0px 0px; min-height:calc(100vh - #{$header-width + 50px}); padding:25px;}
+
+    body.external-iframe-in-use .draft-status-bar{bottom:80px;}
 }
