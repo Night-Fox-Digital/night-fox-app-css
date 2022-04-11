@@ -67,7 +67,7 @@ nav .links .line:first-of-type{margin-top:0px;}
 nav .links .link .deploy-status{display:inline-block; width:18px; height:18px; border-radius:50%; margin-right:10px; margin-top:3px;}
 nav .links .link .deploy-title{display:inline-block; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; max-width:195px; font-size:14px; font-family:$accent-font;}
 
-nav .links .nav-title-container{display:table; width:100%; border-bottom:1px solid rgba($primary-color,0.1); margin:25px 0px 5px 0px;}
+nav .links .nav-title-container{display:table; width:100%; border-bottom:1px solid rgba($primary-color,0.1); margin:25px 0px 5px 0px; color:$primary-color;}
 nav .links .nav-title-container .nav-title{display:table-cell; vertical-align:middle; text-align:left; font-weight:700; text-transform:uppercase; font-size:13px;}
 nav .links .nav-title-container .nav-title span{float:right;}
 
