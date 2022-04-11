@@ -69,7 +69,7 @@ nav .links .link .deploy-title{display:inline-block; text-overflow:ellipsis; ove
 
 nav .links .nav-title-container{display:table; width:100%; border-bottom:1px solid rgba($primary-color,0.1); margin:25px 0px 5px 0px; color:$primary-color;}
 nav .links .nav-title-container .nav-title{display:table-cell; vertical-align:middle; text-align:left; font-weight:700; text-transform:uppercase; font-size:13px;}
-nav .links .nav-title-container .nav-title span{float:right;}
+nav .links .nav-title-container .nav-title span{margin-right:5px;}
 
 .account-switch{opacity:0; pointer-events:none; position:fixed; top:100px; left:$header-width; width:$nav-width; background:$inverse-color; transition:0.15s ease-in-out;}
 .account-switch .links{position:static; text-align:center; padding:17px 25px; height:calc(100vh - 150px); overflow-y:auto; -ms-overflow-style:none;}
