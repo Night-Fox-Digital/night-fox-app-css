@@ -12,6 +12,12 @@
 .drawer-links .link.active,
 .drawer-links .link:hover{background:rgba($inverse-color,0.5);}
 
+.modal-links{position:static;}
+.modal-links .link{display:inline-block; width:calc(100% - 22px); border:1px solid rgba($primary-color,0.75); padding:10px; border-radius:$border-radius; color:$primary-color;}
+.modal-links .link span{float:right;}
+.modal-links div{margin-bottom:7.5px;}
+.modal-links div:last-of-type{margin-bottom:0px;}
+
 @media (max-width:$close-nav-width)
 {
     .drawer,
