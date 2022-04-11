@@ -139,7 +139,10 @@ nav .links .nav-title-container .nav-title span{margin-right:5px;}
 .core.external{padding:0px !important; width:calc(100% - #{$nav-width + $header-width}); height:100vh;}
 .core.external iframe{width:100%; height:100vh;}
 
+body.external-iframe-in-use .draft-status-bar{width:100% !important;}
 body.external-iframe-in-use .core{margin:0px;}
+
+.draft-status-bar-buffer{position:static; height:80px;}
 
 @media (max-width:$close-nav-width)
 {
