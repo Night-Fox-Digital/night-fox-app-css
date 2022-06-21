@@ -16,6 +16,7 @@
 @media (max-width:$mobile-header-width)
 {
     .modal-wrapper{top:$header-width; left:0px; width:100%; height:calc(100vh - $header-width);}
+    .no-nav .modal-wrapper{top:0px; height:100vh;}
     .modal{width:calc(100% - 50px);}
 }
 

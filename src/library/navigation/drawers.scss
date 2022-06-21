@@ -28,6 +28,7 @@
 {
     .drawer,
     .drawer.small{height:calc(100vh - $header-width); top:$header-width; width:100%; right:-100%;}
+    .no-nav .drawer{top:0px; height:100vh;}
 }
 
 @media (max-width:$iphone-width)
