@@ -61,6 +61,7 @@ nav .links .link:focus span.pointer{color:$primary-color;}
 nav .links .link.active span.count,
 nav .links .link:hover span.count,
 nav .links .link:focus span.count{color:$inverse-color; background:$primary-color;}
+nav .links .link span.count sup{font-size:8px; padding-top:5px;}
 nav .links .line{display:block; height:1px; overflow:hidden; background:rgba($primary-color,0.1); margin:20px 0px;}
 nav .links .line:first-of-type{margin-top:0px;}
 /* DEPLOYMENT SYSTEM-SPECIFIC THINGS */

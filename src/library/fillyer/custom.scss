@@ -1,0 +1,21 @@
+.medal-container{position:relative; display:block; width:calc(100% - 50px); text-align:center; border-radius:$border-radius; background:$inverse-color; padding:25px;}
+.medal-container .medal{display:inline-block; width:150px; height:150px; border-radius:150px; text-align:center;}
+.medal-container.profile-version{padding:0px; width:100%;}
+.medal-container.profile-version .medal{width:100px; height:100px; border-radius:100px;}
+.medal-container.gold .medal{background:linear-gradient(-45deg,#FFD700,#c4ae3a);}
+.medal-container.silver .medal{background:#C0C0C0;}
+.medal-container.bronze .medal{background:#CD7F32;}
+.medal-container.not-earned .medal{background:rgba(#C0C0C0,0.15);}
+.medal-container .medal span{font-size:75px; line-height:160px; color:$core-bg;}
+.medal-container.profile-version .medal span{font-size:50px; line-height:110px;}
+.medal-container .title{margin-top:10px; border-radius:$border-radius; background:$inverse-color; border:2px solid; padding:5px; width:calc(100% - 64px); text-align:center;}
+.medal-container .title span{display:block; font-size:10.5px; margin-top:3.5px;}
+.medal-container.gold .title{border-color:#FFD700; color:#FFD700;}
+.medal-container.silver .title{border-color:#C0C0C0; color:#C0C0C0;}
+.medal-container.bronze .title{border-color:#CD7F32; color:#CD7F32;}
+.medal-container.not-earned .title{border-color:rgba(#C0C0C0,0.15); color:rgba(#C0C0C0,0.15);}
+
+.profile-banner{position:relative; width:100%; background:url('/images/banner.jpg') center center no-repeat; background-size:cover; height:350px; border-radius:$border-radius $border-radius 0px 0px;}
+.profile-banner .avatar{position:absolute; border:1px solid $header-text-color; left:calc(50% - 75px); bottom:-75px; height:150px; width:150px; border-radius:150px; background:url('/images/avatar.jpg') center center no-repeat; background-size:cover;}
+.profile-name{position:static; text-align:center; background:$inverse-color; padding:85px 25px 0px 25px; font-weight:700; color:$primary-color; font-size:40px;}
+.profile-wrapper{position:static; background:$inverse-color; padding:50px; border-radius:0px 0px $border-radius $border-radius;}
