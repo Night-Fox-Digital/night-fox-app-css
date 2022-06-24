@@ -1,7 +1,12 @@
 .unauth-decor{position:fixed; display:table; top:0px; right:0px; width:50%; height:100vh; background:$inverse-color;}
 .unauth-decor .logo{display:table-cell; vertical-align:middle; text-align:center;}
-.unauth-decor .logo img{width:125px;}
-.unauth-decor .logo span{font-size:100px; color:$primary-color;}
+.unauth-decor .logo img{width:125px; filter:invert(100%); transform:rotate(45deg);}
+.unauth-decor .logo span{font-size:200px; color:$primary-color;}
+
+@media (max-width:$ipad-landscape-width)
+{
+    .unauth-decor .logo span{font-size:125px;}
+}
 
 .unauth-form{position:static; display:table; width:calc(50% - 100px); height:calc(100vh - 100px); margin:0px 50% 0px 0px; padding:50px;}
 .unauth-form-container{display:table-cell; vertical-align:middle; text-align:center;}
