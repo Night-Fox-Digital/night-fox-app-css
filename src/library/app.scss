@@ -43,4 +43,6 @@ IMPORTANT NOTE: If you get a compile error when running yarn related to 'resolve
 
 @import 'core';
 
-@import 'customize';
+@import 'modules/chat';
+@import 'modules/maps';
+@import 'modules/to-dos';

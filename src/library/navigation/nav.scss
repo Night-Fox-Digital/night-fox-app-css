@@ -71,6 +71,14 @@ nav .links .nav-title-container{display:table; width:100%; border-bottom:1px sol
 nav .links .nav-title-container .nav-title{display:table-cell; vertical-align:middle; text-align:left; font-weight:700; text-transform:uppercase; font-size:13px;}
 nav .links .nav-title-container .nav-title span{margin-right:5px;}
 
+nav .group-links-wrapper{display:block; background:$core-bg; border-radius:$border-radius; margin-top:-20px;}
+nav .links .group-links-wrapper .nav-title-container{border-bottom:0px;}
+nav .links .group-links-wrapper .nav-title-container .nav-title{padding:15px;}
+nav .links .group-links-wrapper .link:last-of-type{padding-bottom:20px;}
+nav .links .group-links-wrapper .link.active span:first-of-type,
+nav .links .group-links-wrapper .link:hover span:first-of-type,
+nav .links .group-links-wrapper .link:focus span:first-of-type{color:$bad-color;}
+
 .account-switch{opacity:0; pointer-events:none; position:fixed; top:100px; left:$header-width; width:$nav-width; background:$inverse-color; transition:0.15s ease-in-out;}
 .account-switch .links{position:static; text-align:center; padding:17px 25px; height:calc(100vh - 150px); overflow-y:auto; -ms-overflow-style:none;}
 .account-switch .links::-webkit-scrollbar{display:none; width:0px; background:transparent;}
