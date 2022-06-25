@@ -1,0 +1,6 @@
+.make-table{display:table; width:100%;}
+.make-table .make-table-cell{display:table-cell; vertical-align:top;}
+.make-table.two .make-table-cell:first-of-type{padding-right:12.5px;}
+.make-table.two .make-table-cell:last-of-type{width:50%; padding-left:12.5px;}
+
+.make-block{display:block; width:100%;}
