@@ -9,7 +9,7 @@
 .chat-message-box .chat-message-button span{font-size:25px; color:#FFF;}
 
 .chat-message-container{position:static; margin-top:125px;}
-.chat-message{position:static; background:$inverse-color; color:$deep-color; border-radius:$border-radius; margin-bottom:25px;}
+.chat-message{position:static; background:$inverse-color; color:$deep-color; border-radius:$border-radius; margin-bottom:10px;}
 .chat-message:last-of-type{margin-bottom:0px;}
 .chat-info-container{display:table; width:100%;}
 .chat-info-container .avatar{display:table-cell; vertical-align:middle; text-align:center; width:75px; padding:25px 15px 15px 25px;}

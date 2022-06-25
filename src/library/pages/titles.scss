@@ -46,11 +46,17 @@ margin-top batch above this comment.
     .title-container .tabbed-buttons a{padding:10px; font-size:calc($desktop-font-size - 2px); text-align:center;}
     .title-container .tabbed-buttons a span:nth-child(1){display:block; margin-right:0px; margin-bottom:2.5px; font-size:20px;}
     .title-container .tabbed-buttons a span:nth-child(2){display:none;}
+    .title-container .tabbed-buttons a .counter{font-size:9px !important; height:14px; line-height:14px;}
 }
 
 @media (max-width:$ipad-landscape-width)
 {
     .title-container .tabbed-buttons a{font-size:$mobile-font-size;}
+}
+
+@media (max-width:$ipad-portrait-width)
+{
+    .title-container .tabbed-buttons a .counter{display:none !important;}
 }
 
 @media (max-width:$iphone-width)
