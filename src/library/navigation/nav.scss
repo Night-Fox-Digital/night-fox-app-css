@@ -7,7 +7,8 @@ header .logo-or-hamburger-container a{display:block; color:$header-text-color; f
 header .logo-or-hamburger-container a:hover{transform:scale(1.05);}
 header .logo-or-hamburger-container img{display:inline-block; margin:5px auto -4px auto; width:100%;}
 header .links{display:table-cell; vertical-align:middle; text-align:center; padding:75px 0px; width:$header-width;}
-header .links .link{display:block; padding-top:15px; width:100%;}
+header .links .link{display:block; position:relative; padding-top:15px; width:100%;}
+header .links .link .counter{position:absolute; right:5px; top:5px; width:28px; height:28px; font-size:13px; line-height:28px; text-align:center; border-radius:50%; background:$bad-color; color:#FFF;}
 header .links .link:first-of-type{margin-top:0px;}
 header .links a{position:relative; display:inline-block; width:55px; height:55px; line-height:57.5px; color:$header-text-color; text-align:center; font-size:20px; background:rgba(0,0,0,0.15); border-radius:$border-radius;}
 header .links a .hover-title{position:absolute; top:16.5px; left:calc(100% + 5px); width:100px; height:22.5px; line-height:23.5px; display:inline-block; white-space:nowrap; background:$primary-color; border-radius:$border-radius; color:$inverse-color; font-size:10px; font-weight:600; opacity:0; pointer-events:none; transition:$fast-transition;}
@@ -26,6 +27,7 @@ header .links a:hover .hover-title{opacity:1;}
     header .logo-or-hamburger-container{top:10px; left:20px;}
     header .links{width:auto; padding:0px 65px 0px 25px; text-align:right;}
     header .links .link{display:inline-block; padding:0px 5px 0px 0px; width:auto;}
+    header .links .link .counter{right:auto; left:-8px; top:-8px; width:20px; height:20px; line-height:20px; font-size:10px;}
     header .links .link:last-of-type{padding:0px;}
     header .links a{width:35px; height:35px; line-height:37.5px;}
     header .links a .hover-title{top:calc(100% + 5px); left:calc(-50% - 15px);}

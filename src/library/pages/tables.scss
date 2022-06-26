@@ -103,7 +103,7 @@
 
 .no-results{z-index:1; position:relative; width:calc(100% - 50px); background:$inverse-color; border-radius:$border-radius; margin-bottom:25px; padding:100px 25px 35px 25px; color:$primary-color; text-align:center; overflow:hidden;}
 .no-results p{line-height:1.5em; font-size:13px; letter-spacing:1.25px; text-transform:uppercase;}
-.no-results span{z-index:-1; position:absolute; top:-30px; left:calc(50% - 65px); font-size:130px; color:$primary-color;}
+.no-results span{z-index:-1; position:absolute; top:-30px; left:calc(50% - 65px); font-size:130px; color:rgba($primary-color,0.25);}
 
 @media (max-width:$iphone-width)
 {
