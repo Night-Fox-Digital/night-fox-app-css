@@ -13,7 +13,7 @@
 .table .row.sortable .cell:not(.buttons) a:focus span{pointer-events:auto; opacity:1;}
 .table .cell{display:table-cell; vertical-align:middle; text-align:left; padding:15px; color:$primary-color; border-top:1px solid rgba($primary-color,0.1); font-size:14px; font-family:$main-font;}
 .table .row.sortable-chosen{cursor:grab;}
-.table .cell.buttons{display:table-cell !important;}
+.table .cell.buttons{display:table-cell !important; padding:15px 5px;}
 .table .cell.photo-column{width:100px;}
 .table .cell.photo-column img{width:100%; margin-bottom:-5px; border-radius:$border-radius;}
 .table .cell .no-photo{display:block; border:1px solid rgba($primary-color,0.1); font-size:18px; background:$core-bg; height:60px; line-height:60px; text-align:center; color:$primary-color; border-radius:$border-radius;}
@@ -47,43 +47,18 @@
 .cell-wrapper{display:inline-block; white-space:nowrap; text-overflow:ellipsis; max-width:350px; overflow:hidden;}
 .table .cell.accent .cell-wrapper{white-space:normal; max-width:none;}
 
-@media (min-width:2000px)
-{
-    .cell-wrapper{max-width:none !important;}
-}
-
-@media (max-width:calc($close-nav-width + 300px))
-{
-    .table .cell{display:none;}
-    .table .cell:nth-child(1),
-    .table .cell:nth-child(2),
-    .table .cell:nth-child(3),
-    .table .cell:nth-child(4){display:table-cell;}
-}
-
-@media (max-width:calc($close-nav-width + 100px))
-{
-    .table .cell:nth-child(4){display:none;}
-}
-
 @media (max-width:$ipad-landscape-width)
 {
-    .cell-wrapper{max-width:250px;}
-
     .table.singular .cell{padding:15px;}
-    .table .cell:nth-child(3){display:none;}
 }
 
 @media (max-width:$ipad-portrait-width)
 {
-    .cell-wrapper{max-width:150px;}
-
     .table .cell,
     .table.list tbody .row:first-of-type .cell:not(.buttons){font-size:$mobile-font-size !important;}
 
     .table.list .row:first-of-type .cell{font-size:calc($mobile-font-size - 3px) !important;}
 
-    .table .cell.accent .cell-wrapper{white-space:normal; max-width:none;}
     .table .cell.accent{font-size:calc($mobile-font-size - 3px) !important;}
 
     .table.singular .cell{padding:15px;}
@@ -91,7 +66,6 @@
 
 @media (max-width:$iphone-width)
 {
-    .cell-wrapper{max-width:100px;}
     .table .cell,
     .table.list tbody .row:first-of-type .cell:not(.buttons){font-size:calc($mobile-font-size - 2px) !important;}
     .row .cell:first-of-type .cell-wrapper{max-width:200px;}
@@ -117,3 +91,5 @@
 .paginate a:hover,
 .paginate a.active{border-color:transparent;}
 .paginate a.disabled{border-color:rgba($core-bg,0.2); color:rgba($core-bg,0.2); cursor:not-allowed;}
+
+.table-scroll-wrapper{overflow-x:scroll;}

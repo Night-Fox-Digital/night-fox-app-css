@@ -25,10 +25,23 @@
 {
     .button,
     .table.singular .button,
-    .account-switch .links .button{min-width:30px; height:30px; line-height:30px; font-size:16px;}
+    .account-switch .links .button{min-width:30px; height:30px; line-height:30px; font-size:13px;}
 
     .button .hover-title,
     .account-switch .links .button .hover-title,
+    .table.singular .button .hover-title{left:calc(-50% - 20px); top:-28.5px;}
+}
+
+@media (max-width:$iphone-width)
+{
+    .button,
+    .table.singular .button,
+    .table .button,
+    .account-switch .links .button{min-width:30px; height:30px; line-height:30px; font-size:13px;}
+
+    .button .hover-title,
+    .account-switch .links .button .hover-title,
+    .table .button .hover-title,
     .table.singular .button .hover-title{left:calc(-50% - 20px); top:-28.5px;}
 }
 
