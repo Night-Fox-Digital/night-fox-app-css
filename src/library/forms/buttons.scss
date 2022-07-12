@@ -1,18 +1,28 @@
 button,
+.submit-button,
 input[type=submit]{position:relative; display:inline-block; width:100%; border-radius:$border-radius; color:#FFF; padding:20px; font-size:16px; text-transform:uppercase; letter-spacing:0.5px; font-weight:600; transition:$normal-transition;}
+.submit-button{padding:20px 0px;}
+.submit-button:first-of-type{margin-bottom:15px;}
+.submit-button:last-of-type{margin-bottom:0px;}
 button span,
+.submit-button span,
 input[type=submit] span{margin-left:5px; transition:$normal-transition;}
 button:hover span,
 button:focus span,
+.submit-button:hover span,
+.submit-button:focus span,
 input[type=submit]:hover span,
 input[type=submit]:focus span{margin-left:15px;}
 button.processing,
+.submit-button.processing,
 input[type=submit].processing{padding:12.5px 20px;}
 button img.spinner,
+.submit-button img.spinner,
 input[type=submit] img.spinner{display:inline-block; left:calc(50% - 15px); width:30px; filter:invert(100%); transition:$normal-transition;}
 
 @media (max-width:$ipad-portrait-width)
 {
     button,
+    .submit-button,
     input[type=submit]{font-size:$mobile-font-size;}
 }

@@ -31,3 +31,7 @@ $bad-color-hover:#b23434;
 a:hover.bad-bg,
 button:hover.bad-bg{background:$bad-color-hover !important; border-color:$bad-color-hover !important;}
 .bad-text{color:$bad-color !important;}
+
+.inverse-text{color:$inverse-color !important;}
+.deep-text{color:$deep-color !important;}
+.white-text{color:#FFF !important;}

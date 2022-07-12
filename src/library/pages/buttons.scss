@@ -1,6 +1,10 @@
 .buttons{white-space:nowrap;}
 
 .button{position:relative; display:inline-block; text-align:center; min-width:50px; height:50px; line-height:50px; border-radius:$border-radius; border:1px solid rgba($primary-color,0.5); color:$primary-color; background:$inverse-color; font-weight:600; font-size:18px; margin-left:5px;}
+.button.text-based{padding:0px 15px; font-size:13px; margin-left:0px; height:35px; line-height:35px; margin:2.5px 5px 2.5px 0px;}
+.button.text-based:first-of-type{margin-bottom:0px;}
+.button.text-based span{margin-right:5px;}
+.button.text-based:hover{border-color:$deep-color;}
 .button.active{background:$primary-color; color:$inverse-color; border-color:$primary-color;}
 .button span{transition:$normal-transition;}
 .button.good-bg{color:#FFF;}
@@ -21,14 +25,37 @@
 {
     .button,
     .table.singular .button,
-    .account-switch .links .button{min-width:30px; height:30px; line-height:30px; font-size:16px;}
+    .account-switch .links .button{min-width:30px; height:30px; line-height:30px; font-size:13px;}
 
     .button .hover-title,
     .account-switch .links .button .hover-title,
     .table.singular .button .hover-title{left:calc(-50% - 20px); top:-28.5px;}
 }
 
+@media (max-width:$iphone-width)
+{
+    .button,
+    .table.singular .button,
+    .table .button,
+    .account-switch .links .button{min-width:30px; height:30px; line-height:30px; font-size:13px;}
+
+    .button .hover-title,
+    .account-switch .links .button .hover-title,
+    .table .button .hover-title,
+    .table.singular .button .hover-title{left:calc(-50% - 20px); top:-28.5px;}
+}
+
 .big-buttons{padding:25px; width:calc(100% - 50px) !important;}
-.big-buttons a{display:block; text-align:center; background:$core-bg; font-size:15px; color:rgba($primary-color,0.65); border-radius:$border-radius; padding:15px; border:1px solid transparent; width:calc(100% - 32px);}
+.big-buttons a{display:table; background:$core-bg; font-size:15px; color:rgba($primary-color,0.65); border-radius:$border-radius; padding:15px; border:1px solid transparent; width:calc(100% - 32px);}
+.big-buttons a div{display:table-cell; vertical-align:middle; text-align:center;}
 .big-buttons a:hover{border-color:$primary-color; color:$primary-color;}
 .big-buttons a.active{border-color:$good-color; color:$good-color;}
+
+@media (max-width:$iphone-width)
+{
+    .big-buttons a{font-size:$mobile-font-size;}
+}
+
+.grid-button{display:block; width:calc(100% - 30px); padding:30px 15px; border-radius:$border-radius; background:$inverse-color; text-align:center; font-size:14px; color:$deep-color;}
+.grid-button span{display:block; margin-bottom:5px; font-size:42px;}
+.grid-button:hover{background:rgba($inverse-color,0.375);}
