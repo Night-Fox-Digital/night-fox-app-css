@@ -11,7 +11,7 @@
 .table .row.sortable .cell:not(.buttons) a:hover span,
 .table .row.sortable .cell:not(.buttons):focus span,
 .table .row.sortable .cell:not(.buttons) a:focus span{pointer-events:auto; opacity:1;}
-.table .cell{display:table-cell; vertical-align:middle; text-align:left; padding:15px; color:$primary-color; border-top:1px solid rgba($primary-color,0.1); font-size:14px; font-family:$main-font;}
+.table .cell{display:table-cell; vertical-align:middle; text-align:left; padding:15px; color:$primary-color; border-top:1px solid rgba($primary-color,0.1); font-size:14px; font-family:$main-font; white-space:nowrap;}
 .table .row.sortable-chosen{cursor:grab;}
 .table .cell.buttons{display:table-cell !important; padding:15px 5px;}
 .table .cell.photo-column{width:100px;}
@@ -82,14 +82,18 @@
     .no-results p{font-size:11px; letter-spacing:0.5px;}
 }
 
-.paginate{display:table; width:100%; padding:15px 0px 0px 0px;}
-.paginate .left-links{display:table-cell; vertical-align:middle; text-align:left; width:60px;}
-.paginate .center-links{display:table-cell; vertical-align:middle; text-align:center;}
-.paginate .center-links a{display:inline-block; margin:0px 5px;}
-.paginate .right-links{display:table-cell; vertical-align:middle; text-align:right; width:60px;}
-.paginate a{color:$primary-color; font-weight:400; letter-spacing:-0.15px; border-bottom:1px solid $primary-color;}
+.paginate{display:table; width:100%; padding:25px 0px 10px 0px;}
+.paginate .left-links{display:table-cell; vertical-align:middle; text-align:left; width:40px;}
+.paginate .center-links{display:table-cell; vertical-align:middle; text-align:center; padding:0px 25px;}
+.paginate .right-links{display:table-cell; vertical-align:middle; text-align:right; width:40px;}
+.paginate a{display:inline-block; margin:0px 2.5px; background:rgba($primary-color,0.1); color:$primary-color; min-width:20px; line-height:20px; border-radius:20px; font-size:11.5px;}
+.paginate .right-links a,
+.paginate .left-links a{padding:0px 5px;}
 .paginate a:hover,
-.paginate a.active{border-color:transparent;}
-.paginate a.disabled{border-color:rgba($core-bg,0.2); color:rgba($core-bg,0.2); cursor:not-allowed;}
+.paginate a.active{background:rgba($primary-color,0.25);}
+.paginate a.disabled{color:rgba($core-bg,0.2); cursor:not-allowed;}
 
 .table-scroll-wrapper{overflow-x:scroll;}
+
+.cell .input-link{padding:0px;}
+.cell .input-link span{margin-right:5px;}
