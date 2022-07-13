@@ -18,7 +18,7 @@
 .table .cell.photo-column img{width:100%; margin-bottom:-5px; border-radius:$border-radius;}
 .table .cell .no-photo{display:block; border:1px solid rgba($primary-color,0.1); font-size:18px; background:$core-bg; height:60px; line-height:60px; text-align:center; color:$primary-color; border-radius:$border-radius;}
 .table.list .row:first-of-type .cell,
-.table.list .row:first-of-type .cell a{font-weight:600; font-size:11px; color:rgba($primary-color,0.8); text-transform:uppercase; letter-spacing:2px;}
+.table.list .row:first-of-type .cell a{font-size:11px; color:rgba($primary-color,0.8); text-transform:uppercase; letter-spacing:2px;}
 .table.list .row:first-of-type .cell:not(.buttons) span{margin-left:5px;}
 .table.singular .cell{padding:25px;}
 .table .cell.accent{font-family:$accent-font; font-size:0.75em;}
@@ -36,7 +36,7 @@
 .table tbody .row.sortable-chosen .cell{background:rgba($primary-color,0.1); }
 .table tbody .row:first-of-type .cell{border-top:1px solid rgba($primary-color,0.1) !important;}
 .table.list tbody .row:first-of-type .cell:not(.buttons),
-.table.list tbody .row:first-of-type .cell:not(.buttons) a{text-transform:none; font-size:14px; font-weight:normal; letter-spacing:normal; padding:15px; color:$primary-color;}
+.table.list tbody .row:first-of-type .cell:not(.buttons) a{text-transform:none; font-size:14px; letter-spacing:normal; padding:15px; color:$primary-color;}
 .table.list tbody .row:first-of-type .cell:not(.buttons) a{padding:0px;}
 .table.list tbody .row:first-of-type .cell:not(.buttons) span{margin-left:0px;}
 .table.list tbody .row:first-of-type .cell.buttons .button{font-size:16px; color:$primary-color;}
