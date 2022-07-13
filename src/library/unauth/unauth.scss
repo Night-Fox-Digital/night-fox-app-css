@@ -1,10 +1,11 @@
 .unauth-decor{position:fixed; display:table; top:0px; right:0px; width:50%; height:100vh; background:$brand-color;}
 .unauth-decor .logo{display:table-cell; vertical-align:middle; text-align:center;}
-.unauth-decor .logo img{width:125px; filter:invert(100%); transform:rotate(45deg);}
+.unauth-decor .logo img{width:200px;}
 .unauth-decor .logo span{font-size:200px; color:#FFF;}
 
 @media (max-width:$ipad-landscape-width)
 {
+    .unauth-decor .logo img{width:125px;}
     .unauth-decor .logo span{font-size:125px;}
 }
 
