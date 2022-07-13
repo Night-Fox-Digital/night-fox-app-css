@@ -6,3 +6,8 @@
 .tag.bad-bg,
 .tag.brand-bg{color:#FFF;}
 .cell .tag:last-of-type{margin-right:0px;}
+
+@media (max-width:$iphone-width)
+{
+    .tag{font-size:calc($mobile-font-size - 2px) !important;}
+}

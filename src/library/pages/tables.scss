@@ -67,7 +67,9 @@
 @media (max-width:$iphone-width)
 {
     .table .cell,
-    .table.list tbody .row:first-of-type .cell:not(.buttons){font-size:calc($mobile-font-size - 2px) !important;}
+    .table.list tbody .row:first-of-type .cell:not(.buttons),
+    .table.list tbody .row:first-of-type .cell:not(.buttons) a,
+    .cell.buttons .button span{font-size:calc($mobile-font-size - 2px) !important;}
     .row .cell:first-of-type .cell-wrapper{max-width:200px;}
 
     .table.list .row:first-of-type .cell{font-size:10px !important; letter-spacing:0.5px;}
@@ -86,7 +88,7 @@
 .paginate .left-links{display:table-cell; vertical-align:middle; text-align:left; width:40px;}
 .paginate .center-links{display:table-cell; vertical-align:middle; text-align:center; padding:0px 25px;}
 .paginate .right-links{display:table-cell; vertical-align:middle; text-align:right; width:40px;}
-.paginate a{display:inline-block; margin:0px 2.5px; background:rgba($primary-color,0.1); color:$primary-color; min-width:20px; line-height:20px; border-radius:20px; font-size:11.5px;}
+.paginate a{display:inline-block; margin:2.5px; background:rgba($primary-color,0.1); color:$primary-color; min-width:20px; line-height:20px; border-radius:20px; font-size:11.5px;}
 .paginate .right-links a,
 .paginate .left-links a{padding:0px 5px;}
 .paginate a:hover,

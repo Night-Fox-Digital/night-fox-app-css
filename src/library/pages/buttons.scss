@@ -38,6 +38,7 @@
     .table.singular .button,
     .table .button,
     .account-switch .links .button{min-width:30px; height:30px; line-height:30px; font-size:13px;}
+    .table .cell.buttons a.button span{line-height:30px !important;}
 
     .button .hover-title,
     .account-switch .links .button .hover-title,
@@ -53,6 +54,7 @@
 
 @media (max-width:$iphone-width)
 {
+    .big-buttons{padding:15px; width:calc(100% - 30px) !important;}
     .big-buttons a{font-size:$mobile-font-size;}
 }
 
