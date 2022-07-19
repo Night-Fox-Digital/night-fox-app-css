@@ -14,8 +14,8 @@
 .table .cell{display:table-cell; vertical-align:middle; text-align:left; padding:15px; color:$primary-color; border-top:1px solid rgba($primary-color,0.1); font-size:14px; font-family:$main-font; white-space:nowrap;}
 .table .row.sortable-chosen{cursor:grab;}
 .table .cell.buttons{display:table-cell !important; padding:15px 5px;}
-.table .cell.photo-column{width:100px;}
-.table .cell.photo-column img{width:100%; margin-bottom:-5px; border-radius:$border-radius;}
+.photo-column{width:100px;}
+.photo-column img{width:100%; margin-bottom:-5px; border-radius:$border-radius;}
 .table .cell .no-photo{display:block; border:1px solid rgba($primary-color,0.1); font-size:18px; background:$core-bg; height:60px; line-height:60px; text-align:center; color:$primary-color; border-radius:$border-radius;}
 .table.list .row:first-of-type .cell,
 .table.list .row:first-of-type .cell a{font-size:11px; color:rgba($primary-color,0.8); text-transform:uppercase; letter-spacing:2px;}
@@ -30,6 +30,9 @@
 .table .cell.big-words{font-size:24px;}
 .table .row:first-of-type .cell{border-width:0px;}
 .table .cell:last-of-type{display:table-cell !important;}
+.table .row .cell button{border:1px solid $primary-color; background:transparent; padding:10px !important; text-transform:none; font-size:$mobile-font-size;}
+.table .row .cell button:hover span{margin-left:5px;}
+.table .row .cell button:hover{padding:10px !important; border-color:rgba($primary-color,0.5);}
 
 /* THE BELOW TBODY FIXES ARE DESIGNED SPECIFICALLY FOR INTRA-TABLE DRAG-AND-DROP SORTING */
 
