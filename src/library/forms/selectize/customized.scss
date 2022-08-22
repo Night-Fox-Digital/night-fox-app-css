@@ -4,7 +4,7 @@
 .selectize-input,.selectize-dropdown{height:auto !important; color:$primary-color !important; font-family:$main-font !important; border:none !important; cursor:default !important; min-height:auto !important; padding:14px 0px !important;}
 .selectize-dropdown{padding:0px !important; background:transparent !important;}
 .input-container .input-box input::placeholder{color:rgba($primary-color,0.375) !important; width:100% !important;}
-.selectize-dropdown-content{padding:0px !important; background-color:$inverse-color; border:1px solid rgba($primary-color,0.1); border-radius:0px 0px $border-radius $border-radius;}
+.selectize-dropdown-content{padding:0px !important; background-color:$inverse-color; max-height:200px; overflow-y:scroll; border:1px solid rgba($primary-color,0.1); border-radius:0px 0px $border-radius $border-radius;}
 .selectize-dropdown-content .option.active{color:$inverse-color; background-color:$primary-color !important;}
 .selectize-dropdown-content .option{font-size:calc($desktop-font-size - 3px); font-weight:600; cursor:default !important;}
 .selectize-dropdown-content .option,.selectize-dropdown .create,.selectize-dropdown .create.active{padding:10px 15px !important; color:$primary-color; text-align:left !important; font-size:calc($desktop-font-size - 3px) !important;}
