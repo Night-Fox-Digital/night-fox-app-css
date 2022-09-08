@@ -1,4 +1,4 @@
-.status{display:inline-block; width:10px; height:10px; border-radius:50%; margin:2.5px 2.5px 2.5px 0px;}
+.status{display:inline-block; width:10px; height:10px; border-radius:50%; margin:0px 2.5px 0px 0px;}
 .cell .status:last-of-type{margin-right:0px;}
 
 .tag{display:inline-block; padding:1px 5px 2.5px 5px; margin:2.5px 2.5px 2.5px 0px; border-radius:3px; font-weight:600; font-size:calc($desktop-font-size - 3px); background:rgba($deep-color,0.1); color:$primary-color;}
