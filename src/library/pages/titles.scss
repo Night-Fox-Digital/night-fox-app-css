@@ -36,7 +36,7 @@ margin-top batch above this comment.
 .title-container .tabbed-buttons a.active{background:$primary-color; color:$inverse-color;}
 .title-container .tabbed-buttons a span{margin-right:5px;}
 .title-container .tabbed-buttons a span:nth-child(2){margin-right:0px;}
-.title-container .tabbed-buttons a .counter{float:right; display:inline-block; margin-left:7.5px; text-align:center; border-radius:9px; padding:0px 5px; min-width:11px; font-size:11px; height:18px; line-height:18px; font-weight:600; background:$primary-color; color:$inverse-color;}
+.title-container .tabbed-buttons a .counter{float:right; display:inline-block; margin-left:7.5px; text-align:center; border-radius:9px; padding:0px 5px; min-width:11px; font-size:11px; height:23px; line-height:23px; font-weight:600; background:$primary-color; color:$inverse-color;}
 .title-container .tabbed-buttons a:hover .counter,
 .title-container .tabbed-buttons a:focus .counter,
 .title-container .tabbed-buttons a.active .counter{background:$inverse-color; color:$primary-color;}
