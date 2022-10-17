@@ -4,6 +4,7 @@ input,button,textarea,select{outline:none;}
 input:disabled,button:disabled,textarea:disabled,select:disabled{cursor:not-allowed;}
 input::placeholder{color:rgba($primary-color,0.375);}
 button{cursor:pointer;}
+select{display:block; background:transparent; color:$primary-color; padding:15px 10px; font-size:$desktop-font-size; width:calc(100% - 5px);}
 
 .buffer{position:static; height:10px;}
 .buffer.small{height:10px;}
