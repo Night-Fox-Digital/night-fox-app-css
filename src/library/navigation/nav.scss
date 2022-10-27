@@ -134,11 +134,11 @@ nav .links .group-links-wrapper .link:focus{background:linear-gradient(90deg,rgb
 #lightswitch span{position:absolute; top:0px; right:0px; bottom:0px; left:0px; overflow:hidden; opacity:1; background-color:#FFF; border-radius:15px; transition:0.2s ease background-color, 0.2s ease opacity;}
 #lightswitch span:before,#lightswitch span:after{content:''; position:absolute; top:5px; width:20px; height:20px; border-radius:50%; transition:0.5s ease transform, 0.2s ease background-color;}
 #lightswitch span:before{background-color:#FFF; transform:translate(0px,-50px); z-index:1;}
-#lightswitch span:after{background-color:rgb(35, 37, 44); transform:translate(-5px,0px); z-index:0;}
-#lightswitch input[type="checkbox"]:checked + span{background-color:rgb(35, 37, 44);}
+#lightswitch span:after{background-color:#000; transform:translate(-5px,0px); z-index:0;}
+#lightswitch input[type="checkbox"]:checked + span{background-color:#FFF;}
 #lightswitch input[type="checkbox"]:active + span{opacity:0.5;}
-#lightswitch input[type="checkbox"]:checked + span:before{background-color:rgb(35, 37, 44); transform:translate(-7px,-6px);}
-#lightswitch input[type="checkbox"]:checked + span:after{background-color:#FFF; transform:translate(-15px,0px);}
+#lightswitch input[type="checkbox"]:checked + span:before{background-color:#FFF; transform:translate(-7px,-6px);}
+#lightswitch input[type="checkbox"]:checked + span:after{background-color:#000; transform:translate(-15px,0px);}
 
 @media (max-width:$mobile-header-width)
 {
